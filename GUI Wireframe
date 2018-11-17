@@ -43,13 +43,13 @@
 
         <!-- CUSTOM LAUNCH PROFILE -->
         <div class="col l5 hide-on-med-and-down" style="line-height: 298px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp <!-- This non breaking space displays the div without content -->
           <div id="cust_launch_prof">Custom launch Profile</div>
         </div>
 
         <!-- BATTERY INFO-->
         <div class="col s7 l4" style="line-height: 298px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp
           <div id="battery_info">Battery Info</div>
         </div>
       </div>
@@ -58,19 +58,19 @@
 
         <!-- POD INFO 1, WHICH WILL INCLUDE SPEED,ACCELERATION AND BRAKES ENGAGE STATE-->
         <div class="col s5 l3" style="line-height: 250px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp
           <div id="pod_info_1">Pod info 1</div>
         </div>
 
         <!-- LAUNCH PROFILE -->
         <div class="col l5 hide-on-med-and-down" style="line-height:250px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp
           <div id="launch_prof">Launch Prof</div>
         </div>
 
         <!-- POD INFO 2, WHICH WILL MOTOR AND BRAKE DATA-->
         <div class="col s7 l4" style="line-height:250px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp
           <div id="pod_info_2">Pod info 2</div>
         </div>
       </div>
@@ -84,7 +84,7 @@
 
         <!-- GO, STOP, CRAWL CONTROL-->
         <div class="col s7 l9" style="line-height: 215px; position: relative;">
-          <span style="color:white">e</span>
+          &nbsp
           <div id="control">Control</div>
         </div>
       </div>
