@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eirloop Pod GUI Wireframe</title>
+
+  <!-- Compiled and minified CSS. This adds the css library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript. This adds the Javascript library-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Import Google Icon Font. This lets us add different icons into the project-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="testGuiStyleSheet.css" />
+
+</head>
+<body>
+    <!-- THE HEADER -->
+    <div class="row">
+      <div id="header" class="col s12 white-text">
+        Eirloop
+      </div>
+    </div>
+
+    <!-- THE CONTAINER -->
+    <div class="container">
+      <div class="row" >
+
+        <!-- POD WIREFRAME AND NAV BAR -->
+        <div id="pod_wire" class="col s5 l3">
+          Pod Wireframe
+          <div id="nav_bar" class="col s5 l3">
+            Nav Bar
+          </div>
+        </div>
+
+        <!-- STATUS AND WEATHER -->
+        <div id="status" class="col s7 l5">Status</div>
+        <div id="weather" class="col l4 hide-on-med-and-down">Weather</div>
+
+        <!-- CUSTOM LAUNCH PROFILE -->
+        <div class="col l5 hide-on-med-and-down" style="line-height: 298px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="cust_launch_prof">Custom launch Profile</div>
+        </div>
+
+        <!-- BATTERY INFO-->
+        <div class="col s7 l4" style="line-height: 298px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="battery_info">Battery Info</div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- POD INFO 1, WHICH WILL INCLUDE SPEED,ACCELERATION AND BRAKES ENGAGE STATE-->
+        <div class="col s5 l3" style="line-height: 250px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="pod_info_1">Pod info 1</div>
+        </div>
+
+        <!-- LAUNCH PROFILE -->
+        <div class="col l5 hide-on-med-and-down" style="line-height:250px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="launch_prof">Launch Prof</div>
+        </div>
+
+        <!-- POD INFO 2, WHICH WILL MOTOR AND BRAKE DATA-->
+        <div class="col s7 l4" style="line-height:250px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="pod_info_2">Pod info 2</div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- CONSOLE, WHICH SENDS AND RECIEVES FROM POD-->
+        <div id="console" class="col s5 l3" style="line-height: 215px;">
+        Console
+        </div>
+
+        <!-- GO, STOP, CRAWL CONTROL-->
+        <div class="col s7 l9" style="line-height: 215px; position: relative;">
+          <span style="color:white">e</span>
+          <div id="control">Control</div>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+</html>
