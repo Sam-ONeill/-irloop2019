@@ -2,6 +2,10 @@ html, body{
   height: 100%;
 }
 
+.col .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .container{
   max-width: none;
   width: 100%;
@@ -18,7 +22,7 @@ html, body{
 .row div{
   text-align: center;
 
-  /* DUBUG STYLE BY SHOWING BORDERS*/
+  /* DUBUG STYLE BY SHOWING BORDERS OF ALL COLUMNS & DIV'S */
   /*border: 1px solid #bdbdbd;*/
 }
 
@@ -123,4 +127,7 @@ html, body{
   width: 77.77%;
 }
 
-
+#control .row div{
+  font-size: 2rem;
+  height: 145px;
+}
