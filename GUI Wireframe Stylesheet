@@ -22,7 +22,7 @@ html, body{
 .row div{
   text-align: center;
 
-  /* DUBUG STYLE BY SHOWING BORDERS OF ALL COLUMNS & DIV'S */
+  /* DUBUG STYLE BY SHOWING BORDERS OF ALL COLUMNS & DIV'S*/
   /*border: 1px solid #bdbdbd;*/
 }
 
@@ -36,14 +36,14 @@ html, body{
 #pod_wire{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
-  line-height: 448px;
+  height: 448px;
   position: relative;
 }
 
 #nav_bar{
   border: 1px solid #bdbdbd;
   border-bottom: 0px;
-  line-height: 60px;
+  height: 60px;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -52,21 +52,21 @@ html, body{
 
 #status{
   border: 1px solid #bdbdbd;
-  line-height: 148px;
+  height: 148px;
   background: #e0e0e0;
 }
 
 #weather{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
-  line-height: 148px;
+  height: 148px;
 }
 
 #cust_launch_prof{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
-  line-height: 225px;
+  height: 225px;
   bottom: 0px;
   left: 10%;
   width: 70%;
@@ -76,7 +76,7 @@ html, body{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
-  line-height: 225px;
+  height: 225px;
   bottom: 0px;
   left: 6.25%;
   width: 81.25%;
@@ -86,7 +86,7 @@ html, body{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
-  line-height: 145px;
+  height: 145px;
   bottom: 52.5px;
   left: 16.66%;
   width: 66.66%;
@@ -96,7 +96,7 @@ html, body{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
-  line-height: 145px;
+  height: 145px;
   bottom: 52.5px;
   left: 10%;
   width: 70%;
@@ -106,7 +106,7 @@ html, body{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
-  line-height: 145px;
+  height: 145px;
   bottom: 52.5px;
   left: 12.5%;
   width: 68.75%;
@@ -121,6 +121,7 @@ html, body{
   border: 1px solid #bdbdbd;
   background: #e0e0e0;
   position: absolute;
+  height: 145px;
   line-height: 145px;
   bottom: 36px;
   left: 11.11%;
