@@ -28,42 +28,42 @@ html, body{
 
 #header{
   font-size: 2rem;
-  background: #28a745;
+  background: #2e501b;
   line-height: 60px;
 }
 
 #pod_wire{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   height: 448px;
   position: relative;
 }
 
 #nav_bar{
-  border: 1px solid #bdbdbd;
+  border: 1px solid #6ea952;
   border-bottom: 0px;
   height: 60px;
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background: #e0e0e0;
+  background: #f0f0f0;
 }
 
 #status{
-  border: 1px solid #bdbdbd;
+  border: 1px solid #6ea952;
   height: 148px;
-  background: #e0e0e0;
+  background: #f0f0f0;
 }
 
 #weather{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   height: 148px;
 }
 
 #cust_launch_prof{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   position: absolute;
   height: 225px;
   bottom: 0px;
@@ -72,8 +72,8 @@ html, body{
 }
 
 #battery_info{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   position: absolute;
   height: 225px;
   bottom: 0px;
@@ -82,8 +82,8 @@ html, body{
 }
 
 #pod_info_1{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   position: absolute;
   height: 145px;
   bottom: 52.5px;
@@ -92,8 +92,6 @@ html, body{
 }
 
 #launch_prof{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
   position: absolute;
   height: 145px;
   bottom: 52.5px;
@@ -101,9 +99,23 @@ html, body{
   width: 70%;
 }
 
+#launch_prof_btns{
+  width: 49%;
+  margin-top:73px;
+  height: 70px;
+  margin-left: 15%;
+  background: #f0f0f0;
+}
+
+#launch_prof_btns .row div{
+  height: 69px; /* heh */
+  font-size: 2rem;
+  padding-top: 15px;
+}
+
 #pod_info_2{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   position: absolute;
   height: 145px;
   bottom: 52.5px;
@@ -112,13 +124,13 @@ html, body{
 }
 
 #console{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
 }
 
 #control{
-  border: 1px solid #bdbdbd;
-  background: #e0e0e0;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
   position: absolute;
   height: 145px;
   line-height: 145px;
@@ -129,5 +141,6 @@ html, body{
 
 #control .row div{
   font-size: 2rem;
-  height: 145px;
+  height: 143px;
+  padding-top: 55px;
 }
