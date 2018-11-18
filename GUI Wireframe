@@ -62,7 +62,7 @@
 
         <!-- LAUNCH PROFILE -->
         <div class="col l5 hide-on-med-and-down" style="margin-top:250px; position:relative;">
-          <div id="launch_prof">Launch Prof</div>
+          <div id="launch_prof">Launch Profile</div>
         </div>
 
         <!-- POD INFO 2, WHICH WILL MOTOR AND BRAKE DATA-->
