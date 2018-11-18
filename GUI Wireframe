@@ -69,7 +69,7 @@
         </div>
 
         <!-- POD INFO 2, WHICH WILL MOTOR AND BRAKE DATA-->
-        <div class="col s7 l4" style="line-height:250px; position: relative;">
+        <div class="col s7 l4" style="min-height=250px; line-height:250px; position: relative;">
           &nbsp
           <div id="pod_info_2">Pod info 2</div>
         </div>
@@ -85,7 +85,19 @@
         <!-- GO, STOP, CRAWL CONTROL-->
         <div class="col s7 l9" style="line-height: 215px; position: relative;">
           &nbsp
-          <div id="control">Control</div>
+          <div id="control">
+          <div class="row">
+            <div class="col s3 center-align flow-text green darken-2 waves-effect waves-light" style="font-size: 2rem; height: 145px;">
+              GO
+            </div>
+            <div class="col s6 center-align flow-text red darken-2 waves-effect waves-light" style="font-size: 2rem;  height: 145px;">
+              STOP
+            </div>
+            <div class="col s3 center-align flow-text yellow darken-1 waves-effect waves-light" style="font-size: 2rem;  height: 145px;">
+              CRAWL
+            </div>
+          </div>
+          </div>
         </div>
       </div>
 
