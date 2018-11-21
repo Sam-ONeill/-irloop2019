@@ -33,8 +33,8 @@
         <!-- POD WIREFRAME AND NAV BAR -->
         <div id="pod_wire" class="col s5 l3">
           <h6>Pod Wireframe</h6>
-          <div id="nav_bar" class="col s5 l3">
-            <h6>Nav Bar</h6>
+          <div id="pod_pos" class="col s5 l3">
+            <h6>Pod Position</h6>
           </div>
         </div>
 
@@ -52,7 +52,16 @@
         <div class="col l5 hide-on-med-and-down" style="height:300px; position:relative;">
           &nbsp <!-- a non breaking space is needed for the background to be styled -->
           <div id="cust_launch_prof">
-            <h6>Custom launch Profile</h6>
+            <label>
+            <input class="with-gap right-align" name="group1" type="radio"/>
+            <span>Custom Launch Profile</span>
+            </label>
+            <ul class="collection">
+              <li class="collection-item">Max Throttle: </li>
+              <li class="collection-item">Throttle Step: </li>
+              <li class="collection-item">Distance: </li>
+              <li class="collection-item">Launch In: </li>
+            </ul>
           </div>
         </div>
 
@@ -71,7 +80,11 @@
         <div class="col s5 l3" style="height:250px; position:relative;">
           &nbsp
           <div id="pod_info_1">
-            <h6>Pod info 1</h6>
+            <ul class="collection">
+              <li id="speed" class="collection-item">Speed: <span></span>Km/h</li>
+              <li id="accel" class="collection-item">Acceleration: <span></span>G's</li>
+              <li id="brakes" class="collection-item">Brakes: <span></span></li>
+            </ul>
           </div>
         </div>
 
@@ -79,11 +92,15 @@
         <div class="col l5 hide-on-med-and-down " style="height:250px; position:relative;">
           &nbsp
           <div id="launch_prof">
+            <label>
+            <input class="with-gap right-align" name="group1" type="radio" />
+            <span>Launch Profile</span>
+            </label>
             <div id="launch_prof_btns">
               <div class="row">
-                <div class="col s4 btn grey lighten-1">1</div>
-                <div class="col s4 btn grey lighten-1">2</div>
-                <div class="col s4 btn grey lighten-1">3</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light">1</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light">2</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light">3</div>
               </div>
             </div>
           </div>
@@ -103,6 +120,8 @@
         <!-- CONSOLE, WHICH SENDS AND RECIEVES FROM POD-->
         <div id="console" class="col s5 l3" style="height: 215px;">
           <h6>Console</h6>
+          <p>COMMAND SENT --> <span id="output"></span></p>
+          <p>View console logs with F12</p>
         </div>
 
         <!-- GO, STOP, CRAWL CONTROL-->
@@ -110,13 +129,13 @@
           &nbsp
           <div id="control">
           <div class="row">
-            <div class="col s3 center-align btn flow-text green darken-2 waves-effect waves-light">
+            <div class="col s3 center-align btn flow-text green darken-2 waves-effect waves-light" onclick="controlBtn('0')">
               GO
             </div>
-            <div class="col s6 center-align btn flow-text red darken-2 waves-effect waves-light">
+            <div class="col s6 center-align btn flow-text red darken-2 waves-effect waves-light" onclick="controlBtn('1')">
               STOP
             </div>
-            <div class="col s3 center-align btn flow-text yellow darken-2 waves-effect waves-light">
+            <div class="col s3 center-align btn flow-text yellow darken-2 waves-effect waves-light" onclick="controlBtn('2')">
               CRAWL
             </div>
           </div>
@@ -126,6 +145,25 @@
       </div>
 
     </div>
+
+<script>
+
+  //Control Button Function
+function controlBtn(press){
+  if(press==='0'){
+    document.getElementById("output").innerHTML="GO";
+    console.log(press);
+  }
+  if(press==='1'){
+    document.getElementById("output").innerHTML="STOP";
+    console.log(press);
+  }
+  if(press==='2'){
+    document.getElementById("output").innerHTML="CRAWL";
+    console.log(press);
+  }
+}
+</script>
 
 </body>
 </html>
