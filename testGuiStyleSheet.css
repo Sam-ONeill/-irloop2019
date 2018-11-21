@@ -6,6 +6,13 @@ html, body{
   margin-left: 0px;
   margin-right: 0px;
 }
+
+input[type=text]:not(.browser-default),textarea.materialize-textarea{
+  width: 10%;
+  margin: 0 0 0 0;
+  height: 15px;
+  text-align: center;
+}
 .container{
   max-width: none;
   width: 100%;
@@ -145,6 +152,18 @@ html, body{
   bottom: 52.5px;
   left: 12.5%;
   width: 68.75%;
+}
+
+#pod_info_2 .row div{
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
+}
+
+#pod_info_2 .collection{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 #console{
