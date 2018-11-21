@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Eirloop Pod GUI Wireframe</title>
 
-  <!-- Compiled and minified CSS. This adds the css library-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled CSS. This adds the css library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
 
   <!-- Compiled and minified JavaScript. This adds the Javascript library-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -40,7 +40,7 @@
 
         <!-- STATUS -->
         <div id="status" class="col s7 l5">
-          <h6>Status</h6>
+          <h4 style="text-align: left; margin-left: 5%; margin-top: 50px">STATUS: <span id="status_out"></span></h4>
         </div>
 
         <!-- Weather -->
@@ -57,10 +57,10 @@
             <span>Custom Launch Profile</span>
             </label>
             <ul class="collection">
-              <li class="collection-item">Max Throttle: </li>
-              <li class="collection-item">Throttle Step: </li>
-              <li class="collection-item">Distance: </li>
-              <li class="collection-item">Launch In: </li>
+              <li class="collection-item">Max Throttle: <input id="maxThrottle" type="text" class="validate"> %</li>
+              <li class="collection-item">Throttle Step: <input id="throttleStep" type="text" class="validate"> mV</li>
+              <li class="collection-item">Distance: <input id="distance" type="text" class="validate"> meters</li>
+              <li class="collection-item">Launch In: <input id="launchTime" type="text" class="validate"> seconds</li>
             </ul>
           </div>
         </div>
@@ -81,9 +81,9 @@
           &nbsp
           <div id="pod_info_1">
             <ul class="collection">
-              <li id="speed" class="collection-item">Speed: <span></span>Km/h</li>
-              <li id="accel" class="collection-item">Acceleration: <span></span>G's</li>
-              <li id="brakes" class="collection-item">Brakes: <span></span></li>
+              <li class="collection-item">Speed: <span id="speed"></span>Km/h</li>
+              <li class="collection-item">Acceleration: <span id="accel"></span>G's</li>
+              <li class="collection-item">Brakes: <span id="brakes" ></span></li>
             </ul>
           </div>
         </div>
@@ -98,9 +98,9 @@
             </label>
             <div id="launch_prof_btns">
               <div class="row">
-                <div class="col s4 btn grey lighten-1 waves-effect waves-light">1</div>
-                <div class="col s4 btn grey lighten-1 waves-effect waves-light">2</div>
-                <div class="col s4 btn grey lighten-1 waves-effect waves-light">3</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light" onclick="launchProfBtn('L1')">1</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light" onclick="launchProfBtn('L2')">2</div>
+                <div class="col s4 btn grey lighten-1 waves-effect waves-light" onclick="launchProfBtn('L3')">3</div>
               </div>
             </div>
           </div>
@@ -110,7 +110,26 @@
         <div class="col s7 l4" style="height:250px; position: relative;">
           &nbsp
           <div id="pod_info_2">
-            <h6>Pod info 2</h6>
+            <div class="row">
+
+              <!-- BRAKES DATA -->
+              <div class="col s6" style="height:143px;">
+                Brakes
+                <ul class="collection">
+                  <li class="collection-item">Pressure: <span id="pressure"></span></li>
+                  <li class="collection-item">Temperature: <span id="brakeTemp"> &#176c</span></li>
+                </ul>
+              </div>
+
+              <!-- MOTOR DATA -->
+              <div class="col s6" style="height:143px;">
+                Motor
+                <ul class="collection">
+                  <li class="collection-item">RPM: <span id="rpm"></span></li>
+                  <li class="collection-item">Temperature: <span id="motorTemp"> &#176c</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -148,21 +167,37 @@
 
 <script>
 
+  //Launch Profile Button Function
+  function launchProfBtn(press){
+    if(press==='L1'){
+      document.getElementById("output").innerHTML="Launch Profile Set to 1";
+      console.log(press);
+    }
+    if(press==='L2'){
+      document.getElementById("output").innerHTML="Launch Profile Set to 2";
+      console.log(press);
+    }
+    if(press==='L3'){
+      document.getElementById("output").innerHTML="Launch Profile Set to 3";
+      console.log(press);
+    }
+  }
+
   //Control Button Function
-function controlBtn(press){
-  if(press==='0'){
-    document.getElementById("output").innerHTML="GO";
-    console.log(press);
+  function controlBtn(press){
+    if(press==='0'){
+      document.getElementById("output").innerHTML="GO";
+      console.log(press);
+    }
+    if(press==='1'){
+      document.getElementById("output").innerHTML="STOP";
+      console.log(press);
+    }
+    if(press==='2'){
+      document.getElementById("output").innerHTML="CRAWL";
+      console.log(press);
+    }
   }
-  if(press==='1'){
-    document.getElementById("output").innerHTML="STOP";
-    console.log(press);
-  }
-  if(press==='2'){
-    document.getElementById("output").innerHTML="CRAWL";
-    console.log(press);
-  }
-}
 </script>
 
 </body>
