@@ -39,7 +39,7 @@ html, body{
   position: relative;
 }
 
-#nav_bar{
+#pod_pos{
   border: 1px solid #6ea952;
   border-bottom: 0px;
   height: 60px;
@@ -62,13 +62,21 @@ html, body{
 }
 
 #cust_launch_prof{
-  border: 1px solid #6ea952;
-  background: #f0f0f0;
   position: absolute;
   height: 225px;
   bottom: 0px;
   left: 10%;
   width: 70%;
+}
+
+#cust_launch_prof .collection{
+  text-align: left;
+}
+
+#cust_launch_prof span{
+  font-size: 1.2rem;
+  position: relative;
+  padding-right: 35%;
 }
 
 #battery_info{
@@ -83,12 +91,22 @@ html, body{
 
 #pod_info_1{
   border: 1px solid #6ea952;
-  background: #f0f0f0;
   position: absolute;
   height: 145px;
   bottom: 52.5px;
   left: 16.66%;
   width: 66.66%;
+}
+
+#pod_info_1 .collection{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#pod_info_1 .collection .collection-item{
+  line-height: 26px;
 }
 
 #launch_prof{
@@ -99,10 +117,16 @@ html, body{
   width: 70%;
 }
 
+#launch_prof span{
+  font-size: 1.5rem;
+  position: relative;
+  padding-right: 48%;
+}
+
 #launch_prof_btns{
   width: 49%;
-  margin-top:73px;
-  height: 70px;
+  margin-top:50px;
+  height: 50px;
   margin-left: 15%;
   background: #f0f0f0;
 }
