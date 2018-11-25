@@ -96,6 +96,12 @@ input[type=text]:not(.browser-default),textarea.materialize-textarea{
   width: 81.25%;
 }
 
+#battery_info .row .col{
+  height: 95px;
+  border: 1px solid #6ea952;
+  background: #f0f0f0;
+}
+
 #pod_info_1{
   border: 1px solid #6ea952;
   position: absolute;
