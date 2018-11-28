@@ -202,22 +202,30 @@
   var massplotchart1=new Chart(batteryGraph1, {
     type:'line', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data:{
-      labels:['30s', '25s', '20s', '15s', '10s', '5s', 'Now'],
+      labels:['20s', '15s', '10s', '5s', 'Now'],
       datasets:[{
         label:'Voltage',
         data:[
+          25,
+          24,
+          24,
           23,
           23,
-          22,
-          21,
-          21,
-          21,
-          20,
         ],
         backgroundColor:'green'
       }]
     },
     options:{
+      scales:{
+        yAxes:[{
+          ticks:{
+            min:21,
+            max:25,
+            stepSize:1,
+          },
+        }],
+      },
+      legend:{display:false,},
       maintainAspectRatio: false,
     }
   });
@@ -226,55 +234,65 @@
   var massplotchart2=new Chart(batteryGraph2, {
     type:'line', //bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data:{
-      labels:['30s', '25s', '20s', '15s', '10s', '5s', 'Now'],
+      labels:['20s', '15s', '10s', '5s', 'Now'],
       datasets:[{
         label:'Voltage',
         data:[
-          23,
+          24,
+          24,
           23,
           22,
-          21,
-          21,
-          21,
-          20,
+          22,
         ],
         backgroundColor:'green'
       }]
     },
     options:{
+      scales:{
+        yAxes:[{
+          ticks:{
+            min:21,
+            max:25,
+            stepSize:1,
+          },
+        }],
+      },
+      legend:{display:false,},
       maintainAspectRatio: false,
     }
   });
 
   //***Launch Profile Button Function***
+  var launchProf;
   function launchProfBtn(press){
+    launchProf=press;                       //Changes the value of podState with the button pressed.
+
     if(press==='L1'){
       document.getElementById("output").innerHTML="Launch Profile Set to 1";
-      console.log(press);
+      //console.log(launchProf);
     }
     if(press==='L2'){
       document.getElementById("output").innerHTML="Launch Profile Set to 2";
-      console.log(press);
     }
     if(press==='L3'){
       document.getElementById("output").innerHTML="Launch Profile Set to 3";
-      console.log(press);
     }
   }
 
   //***Control Button Function***
+  var podState;
   function controlBtn(press){
+    podState=press;                          //Changes the value of podState with the button pressed.
+
     if(press==='0'){
       document.getElementById("output").innerHTML="GO";
-      console.log(press);
+      //console.log(podState);
     }
     if(press==='1'){
       document.getElementById("output").innerHTML="STOP";
-      console.log(press);
     }
     if(press==='2'){
       document.getElementById("output").innerHTML="CRAWL";
-      console.log(press);
     }
   }
 </script>
