@@ -78,7 +78,7 @@
             <div class="row">
               <div class="col s2">
                 <p>Battery Pack 1</p>
-                <p><span id="battPack1Current">- </span>Ah</p>
+                <p><span id="battPack1Current">- </span>mAh</p>
               </div>
               <div class="col s10">
                 <canvas id="batteryGraph1"></canvas>
@@ -89,7 +89,7 @@
             <div class="row">
               <div class="col s2">
                 <p>Battery Pack 2</p>
-                <p><span id="battPack2Current">- </span>Ah</p>
+                <p><span id="battPack2Current">- </span>mAh</p>
               </div>
               <div class="col s10">
                 <canvas id="batteryGraph2"></canvas>
@@ -102,13 +102,13 @@
 
       <div class="row">
 
-        <!-- POD INFO 1, WHICH WILL INCLUDE SPEED,ACCELERATION AND BRAKES ENGAGE STATE-->
+        <!-- POD INFO 1, WHICH WILL INCLUDE VELOCITY,ACCELERATION AND BRAKES ENGAGE STATE-->
         <div class="col s5 l3" style="height:250px; position:relative;">
           &nbsp
           <div id="pod_info_1">
             <ul class="collection">
-              <li class="collection-item">Speed: <span id="speed"></span>Km/h</li>
-              <li class="collection-item">Acceleration: <span id="accel"></span>G's</li>
+              <li class="collection-item">Velocity: <span id="velocity"></span>cm/s</li>
+              <li class="collection-item">Acceleration: <span id="accel"></span>cm/s&sup2</li>
               <li class="collection-item">Brakes: <span id="brakes" ></span></li>
             </ul>
           </div>
@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <!-- POD INFO 2, WHICH WILL MOTOR AND BRAKE DATA-->
+        <!-- POD INFO 2, WHICH WILL DISPLAY MOTOR AND BRAKE DATA-->
         <div class="col s7 l4" style="height:250px; position: relative;">
           &nbsp
           <div id="pod_info_2">
@@ -144,7 +144,7 @@
                 <ul class="collection">
                   <li class="collection-item">Pressure: <span id="pressure"></span></li>
                   <li class="collection-item">Temperature: <span id="brakeTemp"> &#176c</span></li>
-                </ul>
+                </ul> <!--Temperature needs to be displayed in tenths of a degree Celsius, eg 10.1*c or 0.0*c -->
               </div>
 
               <!-- MOTOR DATA -->
@@ -153,7 +153,7 @@
                 <ul class="collection">
                   <li class="collection-item">RPM: <span id="rpm"></span></li>
                   <li class="collection-item">Temperature: <span id="motorTemp"> &#176c</span></li>
-                </ul>
+                </ul> <!--Temperature needs to be displayed in tenths of a degree Celsius, eg 10.1*c or 0.0*c -->
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@
   //***Launch Profile Button Function***
   var launchProf;
   function launchProfBtn(press){
-    launchProf=press;                       //Changes the value of podState with the button pressed.
+    launchProf=press;               //Changes the value of podState with the button pressed.
 
     if(press==='L1'){
       document.getElementById("output").innerHTML="Launch Profile Set to 1";
@@ -282,7 +282,7 @@
   //***Control Button Function***
   var podState;
   function controlBtn(press){
-    podState=press;                          //Changes the value of podState with the button pressed.
+    podState=press;                //Changes the value of podState with the button pressed.
 
     if(press==='0'){
       document.getElementById("output").innerHTML="GO";
